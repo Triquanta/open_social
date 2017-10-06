@@ -60,7 +60,7 @@ class GroupAddTopicBlock extends BlockBase {
       ];
       $url->setOptions($link_options);
 
-      $build['content'] = Link::fromTextAndUrl(t('Create Topic'), $url)->toRenderable();
+      $build['content'] = Link::fromTextAndUrl($this->t('Create Topic'), $url)->toRenderable();
 
       // Cache.
       $build['#cache']['contexts'][] = 'url.path';

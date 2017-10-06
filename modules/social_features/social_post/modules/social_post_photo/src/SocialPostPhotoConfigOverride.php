@@ -12,14 +12,7 @@ use Drupal\Core\Config\StorageInterface;
 class SocialPostPhotoConfigOverride implements ConfigFactoryOverrideInterface {
 
   /**
-   * Returns config overrides.
-   *
-   * @param array $names
-   *   A list of configuration names that are being loaded.
-   *
-   * @return array
-   *   An array keyed by configuration name of override data. Override data
-   *   contains a nested array structure of overrides.
+   * {@inheritdoc}
    */
   public function loadOverrides($names) {
     $overrides = [];

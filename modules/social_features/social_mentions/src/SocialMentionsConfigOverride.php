@@ -19,7 +19,7 @@ define('SOCIAL_MENTIONS_SUGGESTIONS_ALL', 'all');
 class SocialMentionsConfigOverride implements ConfigFactoryOverrideInterface {
 
   /**
-   * Returns config overrides.
+   * {@inheritdoc}
    */
   public function loadOverrides($names) {
     $overrides = [];
