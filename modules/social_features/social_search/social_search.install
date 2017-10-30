@@ -147,7 +147,7 @@ function social_search_update_8103() {
  */
 function social_search_update_8104() {
   $index = Index::load('social_all');
-  if ($index->status()) {
+  if ($index instanceof index && $index->status()) {
     $index->clear();
     $index->reindex();
   }
@@ -164,7 +164,7 @@ function social_search_update_8105() {
 
   foreach ($indexes as $index_id) {
     $index = Index::load($index_id);
-    if ($index->status()) {
+    if ($index instanceof index && $index->status()) {
       $index->clear();
       $index->reindex();
     }
